@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+      fontFamily: 'Roboto', 
     },
   },
   search: {
@@ -17,7 +18,7 @@ export default makeStyles((theme) => ({
     marginLeft: 0,
     width: '100%',
     [theme.breakpoints.up('sm')]: { marginLeft: theme.spacing(3), width: 'auto' },
-    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25)),
+    
   },
   searchIcon: {
     padding: theme.spacing(0, 2), 
@@ -27,6 +28,7 @@ export default makeStyles((theme) => ({
     display: 'flex', 
     alignItems: 'center', 
     justifyContent: 'center',
+
   },
   inputRoot: {
     color: 'inherit',
@@ -41,7 +43,9 @@ export default makeStyles((theme) => ({
   toolbar: {
     display: 'flex', 
     justifyContent: 'space-between',
-    backgroundColor: "#afd275",
+    background: '#44a08d', /* fallback for old browsers */
+    background: '-webkit-linear-gradient(to right, #44a08d, #093637)', /* Chrome 10-25, Safari 5.1-6 */
+    background: 'linear-gradient(to right, #44a08d, #093637)', 
   },
  
   // title: {
