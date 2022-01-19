@@ -1,101 +1,120 @@
-export default [
+export default
+[
   {
-    featureType: 'all',
-    elementType: 'all',
-    stylers: [
-      {
-        saturation: '32',
-      },
-      {
-        lightness: '-3',
-      },
-      {
-        visibility: 'on',
-      },
-      {
-        weight: '1.18',
-      },
-    ],
+      "featureType": "landscape.natural",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
   },
   {
-    featureType: 'administrative',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'on',
-      },
-    ],
+      "featureType": "landscape.natural",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
   },
   {
-    featureType: 'landscape',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-    ],
+      "featureType": "poi",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          }
+      ]
   },
   {
-    featureType: 'landscape.man_made',
-    elementType: 'all',
-    stylers: [
-      {
-        saturation: '-70',
-      },
-      {
-        lightness: '14',
-      },
-    ],
+      "featureType": "poi",
+      "elementType": "labels.text",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          }
+      ]
   },
   {
-    featureType: 'poi',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-    ],
+      "featureType": "poi",
+      "elementType": "labels.icon",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
   },
   {
-    featureType: 'road',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-    ],
+      "featureType": "poi.park",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
   },
   {
-    featureType: 'transit',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-    ],
+      "featureType": "poi.park",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
   },
   {
-    featureType: 'water',
-    elementType: 'all',
-    stylers: [
-      {
-        saturation: '100',
-      },
-      {
-        lightness: '-14',
-      },
-    ],
+      "featureType": "road",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          }
+      ]
   },
   {
-    featureType: 'water',
-    elementType: 'labels',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-      {
-        lightness: '12',
-      },
-    ],
+      "featureType": "road",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
   },
-];
+  {
+      "featureType": "road",
+      "elementType": "labels.text.fill",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "road",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "road",
+      "elementType": "labels.icon",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "transit",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          }
+      ]
+  }
+]
