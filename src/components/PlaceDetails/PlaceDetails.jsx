@@ -5,13 +5,18 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import Rating from '@material-ui/lab/Rating';
 
 import useStyles from './styles.js';
+import "./styles.css";
 
 const PlaceDetails = ({ place, selected, refProp }) => {
   if (selected) refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   const classes = useStyles();
 
   return (
-    <Card elevation={6}>
+    <Card elevation={6} 
+          style={{     
+            borderRadius: '25px',
+            background: '#e0e0e0',
+            boxShadow:  '37px 37px 74px #6e6e6e -37px -37px 74px #ffffff' }}>
       <CardMedia
         style={{ height: 350 }}
         image={place.photo ? place.photo.images.large.url : 'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'}
@@ -30,10 +35,12 @@ const PlaceDetails = ({ place, selected, refProp }) => {
           </Typography>
         </Box>
         <Box display="flex" justifyContent="space-between">
+      <div className="cardContent">
           <Typography component="legend">Ranking</Typography>
           <Typography gutterBottom variant="subtitle1">
             {place.ranking}
           </Typography>
+        </div>
         </Box>
         {place?.awards?.map((award) => (
           <Box display="flex" justifyContent="space-between" my={1} alignItems="center">
